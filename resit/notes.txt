@@ -1,0 +1,30 @@
+setup input equations
+setup resolution and the matrix of a+bi inputs
+setup the answers matrix which stores the return values
+
+use loop to calculate each result from the a+bi inputs
+store the values in the answers matrix
+
+figure out which values from the a+bi didn't converge
+find the minimum and maximum of those values
+
+use loop to check which values were roots
+could definitely change this to be faster
+
+reshape the roots matrix into an array
+split then into real and imaginary to use with the unique tolerance function
+then recombine to make complex numbers again
+
+generate a list of hsv values
+range the hue values between 0 and 1 using however many steps are needed for unique colours
+convert the colours from the hsv space to rgb to be used for the image
+
+create the colour image matrix
+
+split up the uniques into real and imaginary to use with the is member tolerance
+definitely problems with this not working at the moment
+
+loop through all of the colours
+check the flat roots array against the current colour using ismembertol
+reshape the logical matrix
+use the logical matrix as a mask to set the colours
